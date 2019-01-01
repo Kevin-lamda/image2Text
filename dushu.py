@@ -136,7 +136,7 @@ def img_tesseract_detect(c_rect, im):
 
     print("识别结果：")
     image = Image.fromarray(l_otsu)
-    image.save('21.jpg')
+    image.save('21.png')
     print(pytesseract.image_to_string(Image.fromarray(l_otsu)))
 
     cv2.waitKey(0)
