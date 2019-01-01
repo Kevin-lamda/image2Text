@@ -8,6 +8,7 @@
 * pip install opencv-contrib-python
 * pip install -U scikit-image
 * pip install imutils
+* pip install scipy
 
 # 使用说明
 - 可直接将待识别图片拖拽到该应用的空白处
