@@ -135,6 +135,8 @@ def img_tesseract_detect(c_rect, im):
     img_show_hook("局部自适应OTSU图像", l_otsu)
 
     print("识别结果：")
+    image = Image.fromarray(l_otsu)
+    image.save('21.jpg')
     print(pytesseract.image_to_string(Image.fromarray(l_otsu)))
 
     cv2.waitKey(0)
@@ -145,10 +147,11 @@ if __name__ == "__main__":
 
     print("...图片文字识别系统...")
 
-    F1 = "172_79.jpg"
-    F2 = "633_88.jpg"
+    F1 = "batch_image/172_79.jpg"
+    F2 = "batch_image/633_88.jpg"
+    F3 = "batch_image/11.png"
 
-    img = cv2.imread(F1)
+    img = cv2.imread(F2)
     img = imutils.resize(img, width=480)
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 

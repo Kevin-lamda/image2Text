@@ -151,7 +151,7 @@ if __name__ == "__main__":
 
     print("...图片文字识别系统...")
 
-    F1 = "obama.jpg"
+    F1 = "batch_image/obama.jpg"
 
     img = cv2.imread(F1)
     img = imutils.resize(img, width=600)
