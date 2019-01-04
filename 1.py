@@ -68,8 +68,11 @@ def panelAbstract(srcImage):
     return panelImg
 
 if __name__=="__main__":
+    print((0x00ff0000>>16)&0xff)
+    """
    srcImage = cv2.imread('20180827083802935.png')
    a=panelAbstract(srcImage)
    cv2.imshow('figa',a)
    cv2.waitKey(0)
    cv2.destroyAllWindows() 
+   """
